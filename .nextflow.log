@@ -1,0 +1,40 @@
+Mar-29 13:14:43.224 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+Mar-29 13:14:43.324 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 22.10.7
+Mar-29 13:14:43.376 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/richel/.nextflow/plugins; core-plugins: nf-amazon@1.11.4,nf-azure@0.14.2,nf-codecommit@0.1.2,nf-console@1.0.4,nf-ga4gh@1.0.4,nf-google@1.4.5,nf-tower@1.5.6,nf-wave@0.5.4
+Mar-29 13:14:43.396 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Mar-29 13:14:43.398 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Mar-29 13:14:43.405 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Mar-29 13:14:43.425 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Mar-29 13:14:43.561 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Mar-29 13:14:43.592 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [naughty_faggin] DSL2 - revision: 2cd908b382
+Mar-29 13:14:43.593 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Mar-29 13:14:43.594 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Mar-29 13:14:43.612 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /home/richel/.nextflow/secrets/store.json
+Mar-29 13:14:43.625 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@7c9b78e3] - activable => nextflow.secret.LocalSecretsProvider@7c9b78e3
+Mar-29 13:14:43.736 [main] DEBUG nextflow.Session - Session UUID: 0335b223-e22a-43e3-ae8e-43aed2316528
+Mar-29 13:14:43.736 [main] DEBUG nextflow.Session - Run name: naughty_faggin
+Mar-29 13:14:43.736 [main] DEBUG nextflow.Session - Executor pool size: 8
+Mar-29 13:14:43.755 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-29 13:14:43.807 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 22.10.7 build 5853
+  Created: 18-02-2023 20:32 UTC (21:32 CEST)
+  System: Linux 5.19.0-38-generic
+  Runtime: Groovy 3.0.13 on OpenJDK 64-Bit Server VM 11.0.18+10-post-Ubuntu-0ubuntu122.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 49928@richel-N141CU [127.0.1.1]
+  CPUs: 8 - Mem: 7.5 GB (1 GB) - Swap: 20 GB (19.9 GB)
+Mar-29 13:14:43.852 [main] DEBUG nextflow.Session - Work-dir: /home/richel/GitHubs/nextflow_example_2/work [ext2/ext3]
+Mar-29 13:14:43.852 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/richel/GitHubs/nextflow_example_2/bin
+Mar-29 13:14:43.865 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-29 13:14:43.884 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-29 13:14:43.910 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-29 13:14:43.929 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Mar-29 13:14:44.078 [main] DEBUG nextflow.Session - Session start
+Mar-29 13:14:44.387 [main] ERROR nextflow.cli.Launcher - Script compilation error
+- file : /home/richel/GitHubs/nextflow_example_2/main.nf
+- cause: Unexpected character: '#' @ line 1, column 1.
+   #
+   ^
+
+1 error
+

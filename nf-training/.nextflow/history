@@ -1,0 +1,6 @@
+2023-03-20 14:19:44	2.3s	awesome_thompson	OK	c9c95cfb00244f2f51fa8174295bd0ed	12f8368f-b31e-4689-8861-3c31e887cbeb	nextflow run hello.nf
+2023-03-20 14:19:53	2.4s	romantic_elion	OK	c9c95cfb00244f2f51fa8174295bd0ed	9c392d69-2a7c-43bb-a178-25243bc77662	nextflow run hello.nf
+2023-03-20 14:20:07	2.4s	marvelous_pare	OK	c9c95cfb00244f2f51fa8174295bd0ed	5a0a089e-0466-44db-8645-b7fc7040d635	nextflow run hello.nf
+2023-03-20 14:24:14	2.5s	chaotic_dalembert	OK	c9c95cfb00244f2f51fa8174295bd0ed	5a0a089e-0466-44db-8645-b7fc7040d635	nextflow run hello.nf -resume
+2023-03-20 14:26:08	2.6s	berserk_noether	OK	55ee30af05a6dbf57df143d5b1dde014	5a0a089e-0466-44db-8645-b7fc7040d635	nextflow run hello.nf -resume
+2023-03-20 14:28:02	2.9s	cranky_wescoff	OK	55ee30af05a6dbf57df143d5b1dde014	5a0a089e-0466-44db-8645-b7fc7040d635	nextflow run hello.nf -resume --greeting 'lewifg wewywef veyvewf eywfbwe yfweyofw woqfog'

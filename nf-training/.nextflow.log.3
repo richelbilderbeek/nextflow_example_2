@@ -1,0 +1,60 @@
+Mar-20 14:20:06.369 [main] DEBUG nextflow.cli.Launcher - $> nextflow run hello.nf
+Mar-20 14:20:06.502 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 22.10.7
+Mar-20 14:20:06.544 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/richel/.nextflow/plugins; core-plugins: nf-amazon@1.11.4,nf-azure@0.14.2,nf-codecommit@0.1.2,nf-console@1.0.4,nf-ga4gh@1.0.4,nf-google@1.4.5,nf-tower@1.5.6,nf-wave@0.5.4
+Mar-20 14:20:06.565 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Mar-20 14:20:06.567 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Mar-20 14:20:06.573 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Mar-20 14:20:06.596 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Mar-20 14:20:06.701 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Mar-20 14:20:06.729 [main] INFO  nextflow.cli.CmdRun - Launching `hello.nf` [marvelous_pare] DSL2 - revision: c9c95cfb00
+Mar-20 14:20:06.730 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Mar-20 14:20:06.731 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Mar-20 14:20:06.750 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /home/richel/.nextflow/secrets/store.json
+Mar-20 14:20:06.771 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@3605c4d3] - activable => nextflow.secret.LocalSecretsProvider@3605c4d3
+Mar-20 14:20:06.932 [main] DEBUG nextflow.Session - Session UUID: 5a0a089e-0466-44db-8645-b7fc7040d635
+Mar-20 14:20:06.932 [main] DEBUG nextflow.Session - Run name: marvelous_pare
+Mar-20 14:20:06.933 [main] DEBUG nextflow.Session - Executor pool size: 8
+Mar-20 14:20:06.955 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-20 14:20:07.017 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 22.10.7 build 5853
+  Created: 18-02-2023 20:32 UTC (21:32 CEST)
+  System: Linux 5.19.0-35-generic
+  Runtime: Groovy 3.0.13 on OpenJDK 64-Bit Server VM 11.0.18+10-post-Ubuntu-0ubuntu122.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 19734@richel-N141CU [127.0.1.1]
+  CPUs: 8 - Mem: 7.5 GB (1.9 GB) - Swap: 20 GB (20 GB)
+Mar-20 14:20:07.053 [main] DEBUG nextflow.Session - Work-dir: /home/richel/GitHubs/nextflow_example_2/nf-training/work [ext2/ext3]
+Mar-20 14:20:07.054 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/richel/GitHubs/nextflow_example_2/nf-training/bin
+Mar-20 14:20:07.071 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-20 14:20:07.091 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-20 14:20:07.129 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-20 14:20:07.148 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Mar-20 14:20:07.292 [main] DEBUG nextflow.Session - Session start
+Mar-20 14:20:08.276 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-20 14:20:08.459 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-20 14:20:08.459 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-20 14:20:08.470 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Mar-20 14:20:08.478 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=7.5 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Mar-20 14:20:08.728 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-20 14:20:08.728 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-20 14:20:08.764 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: SPLITLETTERS, CONVERTTOUPPER
+Mar-20 14:20:08.765 [main] DEBUG nextflow.Session - Igniting dataflow network (3)
+Mar-20 14:20:08.766 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SPLITLETTERS
+Mar-20 14:20:08.767 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > CONVERTTOUPPER
+Mar-20 14:20:08.768 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Mar-20 14:20:08.768 [main] DEBUG nextflow.Session - Session await
+Mar-20 14:20:09.007 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-20 14:20:09.012 [Task submitter] INFO  nextflow.Session - [02/73c83f] Submitted process > SPLITLETTERS (1)
+Mar-20 14:20:09.040 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: SPLITLETTERS (1); status: COMPLETED; exit: 0; error: -; workDir: /home/richel/GitHubs/nextflow_example_2/nf-training/work/02/73c83fe225dfad3b57e91c15de0ec8]
+Mar-20 14:20:09.116 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-20 14:20:09.117 [Task submitter] INFO  nextflow.Session - [01/07a21a] Submitted process > CONVERTTOUPPER (1)
+Mar-20 14:20:09.126 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-20 14:20:09.127 [Task submitter] INFO  nextflow.Session - [56/bee08c] Submitted process > CONVERTTOUPPER (2)
+Mar-20 14:20:09.153 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: CONVERTTOUPPER (1); status: COMPLETED; exit: 0; error: -; workDir: /home/richel/GitHubs/nextflow_example_2/nf-training/work/01/07a21ad2f83078ef00dcf3e07e218f]
+Mar-20 14:20:09.168 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: CONVERTTOUPPER (2); status: COMPLETED; exit: 0; error: -; workDir: /home/richel/GitHubs/nextflow_example_2/nf-training/work/56/bee08c547281334fb609f7c9986bf6]
+Mar-20 14:20:09.175 [main] DEBUG nextflow.Session - Session await > all processes finished
+Mar-20 14:20:09.270 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar-20 14:20:09.280 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=3; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=33ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Mar-20 14:20:09.363 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Mar-20 14:20:09.387 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Mar-20 14:20:09.388 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

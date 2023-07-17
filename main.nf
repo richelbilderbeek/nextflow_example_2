@@ -1,6 +1,6 @@
 process get_input_file {
-  output:
-    path 'input.txt'
+  //output:
+  //  path 'input.txt'
 
   """
   get_input_file.sh.sh
@@ -8,10 +8,10 @@ process get_input_file {
 }
 
 process create_result_file {
-  input:
-    path 'input.txt'
-  output:
-    stdout
+  //input:
+  //  path 'input.txt'
+  //output:
+  //  stdout
 
   """
   create_result_file.sh

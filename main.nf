@@ -1,9 +1,14 @@
+#!/usr/bin/env nextflow
+
+project_dir = projectDir
+
+
 process get_input_file {
   //output:
   //  path 'input.txt'
 
   """
-  get_input_file.sh.sh
+  $project_dir/get_input_file.sh
   """
 }
 
@@ -14,7 +19,7 @@ process create_result_file {
   //  stdout
 
   """
-  create_result_file.sh
+  $project_dir/create_result_file.sh
   """
 }
 

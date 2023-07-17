@@ -2,4 +2,4 @@
 #
 # Creates or downloads an input file
 #
-echo "Hello world"
+echo "Hello world" > input.txt

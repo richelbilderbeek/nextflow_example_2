@@ -2,13 +2,12 @@
 
 project_dir = projectDir
 
-
 process get_input_file {
   //output:
   //  path 'input.txt'
 
   """
-  $project_dir/get_input_file.sh
+  $project_dir/create_input_file.sh $project_dir/input.txt
   """
 }
 
@@ -19,7 +18,7 @@ process create_result_file {
   //  stdout
 
   """
-  $project_dir/create_result_file.sh
+  $project_dir/create_result_file.sh $project_dir/input.txt
   """
 }
 

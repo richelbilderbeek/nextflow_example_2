@@ -2,6 +2,7 @@
 
 project_dir = projectDir
 container = 'library://mcenirm/tutorial/fortune-cowsay-lolcat:latest'
+params.outdir = "results"
 
 process get_input_file {
 
@@ -15,6 +16,8 @@ output:
 }
 
 process create_result_file {
+
+  publishDir params.outdir, mode: 'copy'
 
   input: 
     path y

@@ -17,6 +17,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: cowsay does not exist
+        run: cowsay hello || true
+
+      - name: fortune does not exist
+        run: fortune hello || true
+
+      - name: toilet does not exist
+        run: toilet hello || true
+
       # Need older version, as Nextflow DSL1 is used
       - uses: nf-core/setup-nextflow@v1
         with:

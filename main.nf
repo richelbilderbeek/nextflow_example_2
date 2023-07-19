@@ -8,8 +8,9 @@ process get_input_file {
 output: 
   path 'input.txt' 
 
+  // scripts must be in the 'bin' folder
   """
-  $project_dir/create_input_file.sh input.txt
+  create_input_file.sh input.txt
   """
 }
 
@@ -21,8 +22,9 @@ process create_result_file {
   output: 
     path 'result.txt' 
 
+  // scripts must be in the 'bin' folder
   """
-  $project_dir/create_result_file.sh $y
+  create_result_file.sh $y
   """
 }
 

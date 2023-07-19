@@ -30,6 +30,6 @@ jobs:
       - name: Run
         run: ./scripts/run.sh
 
-      - name: View log
-        run: cat nextflow.log || true
+      - name: Show the results
+        run: cat results/result.txt 
 
